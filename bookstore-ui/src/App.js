@@ -13,7 +13,6 @@ function App() {
 
   useEffect(() => {
     setAppState({ loading: true });
-    // const apiUrl = `http://localhost:8081/api/test2`;
     const apiUrl = process.env.REACT_APP_API_URL + '/api/books';
     
     axios.get(apiUrl).then((books) => {
